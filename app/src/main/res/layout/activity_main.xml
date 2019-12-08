@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#C6CFFD">
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="90dp"
+        android:elevation="10dp"
+        android:textColor="#000000"
+        android:textSize="26sp" />
+
+    <Button
+        android:id="@+id/captureimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/detect"
+        android:background="@drawable/buttonui"
+        android:backgroundTint="#8BC34A"
+        android:backgroundTintMode="src_atop"
+        android:foregroundTint="#FFFFFF"
+        android:text="Capture image"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold">
+
+    </Button>
+
+    <Button
+        android:id="@+id/detect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonui"
+        android:backgroundTint="#3F51B5"
+        android:text="Detect text from image"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold">
+
+    </Button>
+
+
+</LinearLayout>
